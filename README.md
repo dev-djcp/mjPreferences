@@ -11,7 +11,7 @@ A small library containing a wrapper/helper for the shared preferences of Androi
 <dependency>
   <groupId>net.djcp</groupId>
   <artifactId>mjpreferences</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -19,7 +19,7 @@ A small library containing a wrapper/helper for the shared preferences of Androi
 ###Gradle
 ```groovy
 dependencies { 
-    compile 'net.djcp:mjpreferences:1.0.0'
+    compile 'net.djcp:mjpreferences:1.0.1'
 }
 ```
 

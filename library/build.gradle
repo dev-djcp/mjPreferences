@@ -2,14 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
     buildTypes {
         release {
@@ -28,7 +28,7 @@ publish {
     userOrg = 'blackdole'
     groupId = 'net.djcp'
     artifactId = 'mjpreferences'
-    version = '1.0.0'
+    version = '1.0.1'
     description = ''
     website = 'https://github.com/mj-android/mjPreferences.git'
     licences = ['Apache-2.0']

@@ -37,16 +37,32 @@ public final class Preferences {
         return getPreferences().getFloat(key, defValue);
     }
 
+    public static float getFloat(final String key) {
+        return getPreferences().getFloat(key, 0);
+    }
+
     public static int getInt(final String key, final  int defValue) {
         return getPreferences().getInt(key, defValue);
+    }
+
+    public static int getInt(final String key) {
+        return getPreferences().getInt(key, 0);
     }
 
     public static long getLong(final String key, final  long defValue) {
         return getPreferences().getLong(key, defValue);
     }
 
+    public static long getLong(final String key) {
+        return getPreferences().getLong(key, 0);
+    }
+
     public static String getString(final String key, final  String defValue) {
         return getPreferences().getString(key, defValue);
+    }
+
+    public static String getString(final String key) {
+        return getPreferences().getString(key, "");
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
